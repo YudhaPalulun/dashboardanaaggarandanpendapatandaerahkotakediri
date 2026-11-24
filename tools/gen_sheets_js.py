@@ -51,7 +51,7 @@ def sheet_json(wf, wv, name):
 def main():
     out = {}
     for y in (2023, 2024, 2025):
-        p = os.path.join(DL, f"Laporan-APBD-Kota-Kediri-{y}.xlsx")
+        p = os.path.join(DL, f"Laporan-Pembiayaan-Kota-Kediri-{y}.xlsx")
         wf, wv = load_workbook(p), load_workbook(p, data_only=True)
         out[y] = {n: sheet_json(wf, wv, n) for n in SHEETS}
     js = "/* Dibuat otomatis oleh tools/gen_sheets_js.py dari file Excel di downloads/. Jangan diubah manual. */\nwindow.SHEETS = " + json.dumps(out, ensure_ascii=False, separators=(",", ":")) + ";\n"

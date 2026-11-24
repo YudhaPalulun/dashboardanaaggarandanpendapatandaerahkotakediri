@@ -1,4 +1,4 @@
-# Dashboard Anggaran dan Pendapatan Daerah — Kota Kediri
+# Dashboard Pembiayaan Daerah — Kota Kediri
 
 Situs statis (HTML, CSS, JavaScript) dari LRA Kota Kediri 2023–2025. Tidak perlu build.
 
